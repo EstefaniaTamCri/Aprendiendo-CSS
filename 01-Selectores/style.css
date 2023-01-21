@@ -1,0 +1,85 @@
+/*
+---------------SELECTORES-------------------------
+*/
+
+/*Selector universal (sirve para todas las etiquetas que existan*/ 
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Selector de etiqueta*/
+h1{
+    background: grey;
+    color-scheme: black;
+    padding: 10px;
+}
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: double;
+}
+footer a{
+    color: aqua;
+    font-size: 15px;
+}
+/*Selector de id*/
+#descripcion, 
+#titulo{
+    border: 5px solid black;
+    padding: 15px;
+}
+/*Selector de clase*/
+.parrafo{
+    font-weight: bold;
+    color:cornflowerblue;
+
+}
+.parrafo1{
+background-color: green;
+color: white;
+}
+/*Selector de atributo*/
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form *{
+    display: block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 200px;
+}
+
+input[type="submit"]{
+    color: black;
+    background: red;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*Selector de hijo*/
+
+#menu > li > a{
+    font-size: 18px;
+    color: red;
+    text-decoration: double;
+}
+
+/*Prioridad (aunque haya una etiqueta mas específica {nombrando el id}, el !important machaca a todos los demás*/
+
+#saludo h1{
+    background: brown;
+}
+
+
+h1{
+    background: purple !important;
+}
